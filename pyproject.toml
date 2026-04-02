@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app-analysis-framework"
+version = "0.2.0"
+description = "AI-assisted application URL and repository analysis framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+app-analysis = "app_analysis_framework.cli:main"
+app-analysis-gui = "app_analysis_framework.gui:run_gui"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
